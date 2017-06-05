@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<title>Splitter</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<script src="js/app.js"></script>
+<br>
+
+<div>
+    <b>Bob</b> address: <tt><span id="addr1"> 0x... </span></tt> 
+    &nbsp; balance : &nbsp;
+    <span id="balance1"> loading...</span> ETH
+</div>
+<br>
+<div>
+    <b>Carol</b> address: <tt><span id="addr2"> 0x... </span></tt>
+    &nbsp; balance : &nbsp;
+    <span id="balance2"> loading...</span> ETH
+</div>    
+<br><br>
+<div>
+    <b>Splitter</b> address: <tt><span id="splitAddress"> 0x... </span></tt>
+    &nbsp; balance : &nbsp;
+    <span id="balance0"> loading...</span> ETH
+</div>    
+<br>
+<div id="status"></div>
+<hr>
+<br>
+<div>
+    Send <input name="amount" type="number" placeholder="0" /> ETH
+    from <input name="fromAddr" type="text" placeholder="0x0011223344556677889900112233445566778899" />
+    to splitter contract
+    <button id="send">Now</button>
+</div>
+
+</body>
+
+</html>
