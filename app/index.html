@@ -8,24 +8,36 @@
 <body>
 
 <script src="js/app.js"></script>
+<h1>Splitter</h1>
 <br>
+<div>
+<button id="activate">Activate</button>&nbsp;<button id="disable">Disable</button>
+<span id="activationStatus"> state unknown </span>
+&nbsp;&nbsp;&nbsp;
+owner's address: <input name="activationAddr" type="text" placeholder="0x0011223344556677889900112233445566778899" />
+</div>
 
+<br>
+<hr><hr>
+<br>
+<h1>Preconfigured Splitter</h1>
+<br>
 <div>
     <b>Bob</b> address: <tt><span id="addr1"> 0x... </span></tt> 
     &nbsp; balance : &nbsp;
-    <span id="balance1"> loading...</span> ETH
+    <span id="balance1"> loading balance...</span>
 </div>
 <br>
 <div>
     <b>Carol</b> address: <tt><span id="addr2"> 0x... </span></tt>
     &nbsp; balance : &nbsp;
-    <span id="balance2"> loading...</span> ETH
+    <span id="balance2"> loading balance...</span>
 </div>    
 <br><br>
 <div>
     <b>Splitter</b> address: <tt><span id="splitAddress"> 0x... </span></tt>
     &nbsp; balance : &nbsp;
-    <span id="balance0"> loading...</span> ETH
+    <span id="balance0"> loading balance...</span>
 </div>    
 <br>
 <div id="status"></div>
@@ -34,9 +46,45 @@
 <div>
     Send <input name="amount" type="number" placeholder="0" /> ETH
     from <input name="fromAddr" type="text" placeholder="0x0011223344556677889900112233445566778899" />
-    to splitter contract
+    (<span id="balanceFromAddr"> ... </span>) to splitter contract
     <button id="send">Now</button>
 </div>
+<br>
+<hr><hr>
+
+<!-- Configurable Splitter  -->
+
+<br>
+<h1>Configurable Splitter</h1>
+<br>
+<div>
+    <b>Split1</b> address: 
+    <tt><input name="utilAddr1" type="text" placeholder="0x0011223344556677889900112233445566778899" /></tt> 
+    &nbsp; balance : &nbsp;
+    <span id="utilBalance1"> loading balance...</span>
+</div>
+<br>
+<div>
+    <b>Split2</b> address: 
+    <tt><input name="utilAddr2" type="text" placeholder="0x0011223344556677889900112233445566778899" /></tt>
+    &nbsp; balance : &nbsp;
+    <span id="utilBalance2"> loading balance...</span>
+</div>    
+<br> 
+<br>
+<div id="utilStatus"></div>
+<hr>
+<br>
+<div>
+    Send <input name="utilAmount" type="number" placeholder="0" /> ETH
+    from <input name="utilFromAddr" type="text" placeholder="0x0011223344556677889900112233445566778899" />
+    (<span id="utilBalanceFromAddr"> ... </span>) to splitter contract
+    <button id="utilSend">Now</button>
+</div>
+<br>
+
+
+
 
 </body>
 
